@@ -4,18 +4,25 @@ This repository contains various PDE benchmarks for 3D framework.
 ## Project Structure
 
 ```
-random/
-├── model.py          # Neural network models and architectures
-├── utils.py          # Utility functions 
-├── vi.py             # VI computations
-├── poisson.py        # Sine-Product Poisson equation example
-├── wave.py           # 1D Wave equation example
-├── wave_2d.py        # 2D Wave equation example
-├── burgers.py        # Viscous Burgers equation example
-├── Oscillatory_Decay.py  # Oscillatory decay ADR example
-├── Traveling_Wave.py    # Traveling wave ADR example
-├── ac_3d.py          # Allen-Cahn equation example
-└── synthetic_poisson.py        # Diagonal_Shock Poisson example
+src/
+├── ac_3d.py                    # Allen-Cahn equation example
+├── ADR/
+│   ├── Oscillatory_Decay.py    # Oscillatory decay ADR example
+│   └── Traveling_Wave.py       # Traveling wave ADR example
+├── Burgers/
+│   ├── burgers.py              # Viscous Burgers equation example
+│   └── burgers_shock.mat       # Data for Burgers' equation
+├── Poissons/
+│   ├── poisson.py              # Sine-Product Poisson equation examples
+│   └── synthetic_poisson.py    # Diagonal_Shock Poisson example
+└── Waves/
+    ├── wave.py                 # 1D Wave equation example
+    └── wave_2d.py              # 2D Wave equation example
+
+tools/
+├── model.py                    # Models and architectures
+├── utils.py                    # Utility functions 
+└── vi.py                       # VI computations
 ```
 
 ## Overview
